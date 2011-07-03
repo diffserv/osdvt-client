@@ -29,7 +29,7 @@ Server = "192.168.0.1"
 ServerPort = 6970
 EnableShutdown = True
 
-cacert = os.getenv('HOME')+"/osdvt/cacert.pem"
+cacert = os.getenv('HOME')+"/osdvt-client/cacert.pem"
 
 class Principal:
 	def get_ip_address(self, ifname):

@@ -31,7 +31,7 @@ from threading import Thread
 pygtk.require("2.0")
 
 port = 6970
-cacert = os.getenv('HOME')+"/osdvt/cacert.pem"
+cacert = os.getenv('HOME')+"/osdvt-client/cacert.pem"
 
 def quit(*args, **kwargs):
 	global VarSaida
@@ -217,7 +217,7 @@ class Principal:
 		self._server = ""
 		self._port = port
                 gtk.gdk.threads_init()
-                self.gladefile = os.getenv('HOME')+"/osdvt/osdvt-client.glade"
+                self.gladefile = os.getenv('HOME')+"/osdvt-client/osdvt-client.glade"
                 self.wTree = gtk.glade.XML(self.gladefile)
                 self.window1 = self.wTree.get_widget("window1")
                 self.window2 = self.wTree.get_widget("window2")
